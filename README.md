@@ -1,6 +1,7 @@
 # IBM-Project-14618-1659587860
 
 **Technology Bucket:** Artificial Science
+
 **Project Statement:** A Gesture-based Tool for Sterile Browsing of Radiology
 
 ## Team Members
