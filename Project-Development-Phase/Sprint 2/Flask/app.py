@@ -8,20 +8,32 @@ from tensorflow.keras.utils import load_img, img_to_array
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__,template_folder="templates")
-model=load_model('F:\Anandh Academics\VIIth Semester\IBM\IBM-Project-14618-1659587860\Project-Development-Phase\Sprint 2\Model Building\gesture.h5')
+model=load_model('../Model Building/gesture.h5')
 print("Model is loaded from local system")
 
 @app.route("/")
+def root():
+	return render_template("home.html")
+
+@app.route("/home")
 def home():
 	return render_template("home.html")
 
+@app.route("/intro")
+def intro():
+	return render_template("intro.html")
+
+@app.route("/launch")
+def launch():
+	return render_template("launch.html")
+
 
 @app.route('/index',methods=['GET','POST'])
-def prediction():
-    return render_template("index6.html")
+def index():
+    return render_template("lauch.html")
 
 @app.route('/predict',methods=['GET','POST'])
-def launch():
+def predict():
     #Getting input and storing it
     if request.method == 'POST':
         print('inside launch function')
