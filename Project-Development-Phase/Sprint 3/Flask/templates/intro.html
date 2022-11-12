@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <style>
+      h1,
+      h2,
+      h3 {
+        text-align: center;
+      }
+
+      header {
+        background-color: orange;
+        color: white;
+      }
+
+      .inputClass {
+        text-align: center;
+      }
+    </style> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body
+    class="grid h-screen place-items-center text-center bg-gradient-to-r from-lime-100 to-cyan-100"
+  >
+    <div class="p-8 rounded-xl bg-white shadow-lg flex flex-col gap-6 w-3/4">
+      <header>
+        <h1
+          class="text-5xl bg-gradient-to-r from-lime-600 to-cyan-600 bg-clip-text text-transparent font-bold"
+        >
+          <a href="/home"> Hand Gesture Prediction System </a>
+        </h1>
+        <div class="mt-4 flex gap-4 justify-center">
+          <a href="/home">
+            <button
+              class="p-2 bg-green-500 hover:bg-green-700 text-white rounded-lg"
+            >
+              Home
+            </button>
+          </a>
+          <a href="/intro">
+            <button
+              class="p-2 bg-blue-500 hover:bg-green-700 text-white rounded-lg"
+            >
+              Introduction
+            </button>
+          </a>
+          <a href="/launch">
+            <button
+              class="p-2 bg-green-500 hover:bg-green-700 text-white rounded-lg"
+            >
+              Launch
+            </button>
+          </a>
+        </div>
+      </header>
+
+      <p>
+        Hand Gesture recognition system provides us an innovative, natural, user
+        friendly way of interaction with the computer which is more familiar to the human beings.
+        In our project, the hand region is extracted from the background by using Region of interest.
+        Then, we will be predicting the labels based on the CNN trained model weights of hand gestures
+        using that predicted labels we apply if conditions to control some of the actions like reshaping, blur,
+        flip of the given image.
+      </p>
+    </div>
+  </body>
+</html>
